@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Consulta de CEP</h1>
+    <form id="cepForm">
+        <label for="cep">Digite o CEP:</label>
+        <input type="text" id="cep" placeholder="Ex: 01001000" required>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Endereços Consultados</h2>
+    <table id="enderecosTable">
+        <thead>
+            <tr>
+                <th>CEP</th>
+                <th>Logradouro</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Os endereços serão inseridos aqui via JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
